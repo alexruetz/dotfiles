@@ -2,3 +2,5 @@ rofi.combi-modi:	window,drun,ssh
 rofi.theme:	material
 rofi.font:	hack 12
 rofi.modi:	combi
+rofi.show-icons:    true
+rofi.dpi:   1
