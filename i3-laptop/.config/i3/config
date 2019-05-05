@@ -166,6 +166,17 @@ bindsym $mod+Ctrl+Backspace exec xbacklight -dec 10
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
+# Power & Lock Menu
+bindsym $mod+Ctrl+l mode "system"
+mode "system" {
+    bindsym l exec --no-startup-id dm-tool lock;mode "default"
+    bindsym p exec --no-startup-id poweroff
+    bindsym r exec --no-startup-id reboot
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
 # i3 gaps specific config
 for_window[class="^.*"] border pixel 5
 gaps inner 5
